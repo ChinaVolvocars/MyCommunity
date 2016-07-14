@@ -18,7 +18,7 @@ import rx.Observable;
 /**
  * Created by SK on 2016-05-25.
  */
-public class BasePartyFragment extends BaseListFragment<Exercise,List<Exercise>> {
+public class BasePartyFragment extends BaseListFragment<Exercise, List<Exercise>> {
 
     public static BasePartyFragment newInstance(String title) {
         BasePartyFragment fragment = new BasePartyFragment();
@@ -55,7 +55,7 @@ public class BasePartyFragment extends BaseListFragment<Exercise,List<Exercise>>
 
     @Override
     protected Observable<Response<List<Exercise>>> sendRequestData() {
-        TLog.log("sendRequestData mCurrentPage = " +  mCurrentPage);
+        TLog.log("sendRequestData mCurrentPage = " + mCurrentPage);
         //return APIWrapper.getInstance().queryLookUp("人才",mCurrentPage);
         return null;
     }

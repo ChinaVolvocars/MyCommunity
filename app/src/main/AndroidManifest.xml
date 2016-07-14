@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.xylife.community">
+    package="com.xylife.community">
 
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <!-- 这个权限用于进行网络定位 -->
@@ -18,8 +18,9 @@
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <supports-screens
         android:anyDensity="true"
@@ -39,34 +40,62 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="s05PvwUZod3dU9GAGYvnHe3clVVDMEWf" />
 
-        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.SplashActivity" android:screenOrientation="portrait"
-                  android:theme="@style/FullScreenTheme" >
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.LoginActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.RegisterActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.SettingActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ForgetPwdActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ChargingPileActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.PartyDetailActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.SignActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.UserInfoActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.CommentActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.PostActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.FeedbackActivity" android:screenOrientation="portrait"/>
-
-        <activity android:name="me.iwf.photopicker.PhotoPickerActivity" android:theme="@style/myTheme" />
-        <activity android:name="me.iwf.photopicker.PhotoPagerActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ChargingPileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PartyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/myTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.framewok.base.BaseParentActivity;
+import com.android.framewok.util.TLog;
 import com.xylife.community.R;
 
 import butterknife.BindView;
@@ -22,7 +23,7 @@ public abstract class BaseTextActivity extends BaseParentActivity implements Vie
     @Override
     protected void initTitleBar() {
         ButterKnife.bind(this);
-
+        TLog.log("BaseTextActivity  BaseTextActivity");
     }
 
     @Override

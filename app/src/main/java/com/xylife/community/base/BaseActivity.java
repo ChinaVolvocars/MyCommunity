@@ -1,5 +1,6 @@
 package com.xylife.community.base;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ public abstract class BaseActivity extends BaseParentActivity implements View.On
     @Override
     protected void initTitleBar() {
         ButterKnife.bind(this);
-
+        Log.d("BaseActivity", "MainActivity");
     }
 
     @Override

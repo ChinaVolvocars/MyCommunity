@@ -84,8 +84,7 @@ public class RecyclerItemAnimator extends RecyclerView.ItemAnimator {
                 });
                 animator.start();
             }
-        }
-        else if(!mAnimationRemoveViewHolders.isEmpty()){
+        } else if (!mAnimationRemoveViewHolders.isEmpty()) {
         }
     }
 
@@ -99,6 +98,6 @@ public class RecyclerItemAnimator extends RecyclerView.ItemAnimator {
 
     @Override
     public boolean isRunning() {
-        return !(mAnimationAddViewHolders.isEmpty()&&mAnimationRemoveViewHolders.isEmpty());
+        return !(mAnimationAddViewHolders.isEmpty() && mAnimationRemoveViewHolders.isEmpty());
     }
 }

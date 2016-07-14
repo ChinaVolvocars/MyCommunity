@@ -1,6 +1,7 @@
 package com.xylife.community.fragment;
 
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.View;
 
 import com.android.framewok.base.ListBaseAdapter;
@@ -29,6 +30,7 @@ public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
         headerView = new CommonHeader(getActivity(), R.layout.layout_home_header);
         RecyclerViewUtils.setHeaderView(mRecyclerView, headerView);
 
+        Log.d("HomeFragment","HomeFragment");
         slideShowView = (HomeSlideShowView) headerView.findViewById(R.id.banner_view);
     }
 

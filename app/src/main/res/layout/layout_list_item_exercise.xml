@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/dp_10"
     android:background="@drawable/selector_white_preferences_item"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <include
+        layout="@layout/layout_horizontal_line"
         android:layout_width="match_parent"
         android:layout_height="1px"
-        layout="@layout/layout_horizontal_line"
-        android:layout_gravity="top"
-        />
+        android:layout_gravity="top" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,33 +52,33 @@
                         android:layout_height="wrap_content"
                         android:maxLines="1"
                         android:textColor="@color/gray_text"
-                        android:textSize="@dimen/sp_14"/>
+                        android:textSize="@dimen/sp_14" />
 
                     <TextView
                         android:id="@+id/certification_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/shape_orange_corners_bg"
+                        android:paddingBottom="2dp"
                         android:paddingLeft="@dimen/dp_4"
                         android:paddingRight="@dimen/dp_4"
-                        android:paddingBottom="2dp"
-                        android:background="@drawable/shape_orange_corners_bg"
+                        android:text="官方"
                         android:textColor="@android:color/white"
-                        android:textSize="@dimen/sp_12"
-                        android:text="官方"/>
+                        android:textSize="@dimen/sp_12" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/enrol_btn"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/dp_40"
-                android:background="@drawable/selector_green_corners_button"
-                style="?android:attr/borderlessButtonStyle"
                 android:layout_alignParentRight="true"
+                android:background="@drawable/selector_green_corners_button"
+                android:text="报名"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/sp_16"
-                android:text="报名"/>
+                android:textSize="@dimen/sp_16" />
 
         </RelativeLayout>
 
@@ -90,7 +89,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/common_black_color"
-            android:textSize="@dimen/sp_16"/>
+            android:textSize="@dimen/sp_16" />
 
         <TextView
             android:id="@+id/time_text"
@@ -101,7 +100,7 @@
             android:drawablePadding="@dimen/dp_4"
             android:maxLines="1"
             android:textColor="@color/gray_text"
-            android:textSize="@dimen/sp_14"/>
+            android:textSize="@dimen/sp_14" />
 
         <TextView
             android:id="@+id/location_text"
@@ -112,20 +111,20 @@
             android:drawablePadding="@dimen/dp_4"
             android:maxLines="1"
             android:textColor="@color/gray_text"
-            android:textSize="@dimen/sp_14"/>
+            android:textSize="@dimen/sp_14" />
 
         <ImageView
             android:id="@+id/display_image"
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_marginTop="@dimen/dp_6"
-            android:src="@mipmap/girl"/>
+            android:src="@mipmap/girl" />
     </LinearLayout>
 
     <include
+        layout="@layout/layout_horizontal_line"
         android:layout_width="match_parent"
         android:layout_height="1px"
-        layout="@layout/layout_horizontal_line"
         android:layout_gravity="bottom"
-        android:layout_marginTop="@dimen/dp_6"/>
+        android:layout_marginTop="@dimen/dp_6" />
 </LinearLayout>

@@ -3,6 +3,7 @@ package com.android.framewok.base;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 
 import com.android.framewok.AppManager;
@@ -21,7 +22,7 @@ public abstract class BaseParentActivity extends RxAppCompatActivity implements 
         if (getLayoutId() != 0) {
             setContentView(getLayoutId());
         }
-
+        Log.d("BaseParentActivity", "BaseParentActivity");
         mInflater = getLayoutInflater();
         mContext = this;
         initTitleBar();
