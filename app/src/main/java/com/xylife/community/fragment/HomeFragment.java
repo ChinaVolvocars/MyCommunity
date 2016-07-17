@@ -29,11 +29,14 @@ public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
 
         headerView = new CommonHeader(getActivity(), R.layout.layout_home_header);
         RecyclerViewUtils.setHeaderView(mRecyclerView, headerView);
-
-        Log.d("HomeFragment","HomeFragment");
         slideShowView = (HomeSlideShowView) headerView.findViewById(R.id.banner_view);
     }
 
+
+    /**
+     * 在这里去，详情界面
+     * @return
+     */
     @Override
     protected ListBaseAdapter<Exercise> getListAdapter() {
         return new ExerciseListAdapter(0);

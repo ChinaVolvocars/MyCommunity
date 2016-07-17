@@ -12,6 +12,7 @@ import java.util.Collection;
 public class ListBaseAdapter<T extends Entity> extends RecyclerView.Adapter {
     protected Context mContext;
     protected int mScreenWidth;
+
     public void setScreenWidth(int width) {
         mScreenWidth = width;
     }

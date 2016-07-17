@@ -70,6 +70,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         mViewPager.addOnPageChangeListener(this);
         Log.d("MainActivity", "MainActivity");
         initCursor();
+
     }
 
     @Override
