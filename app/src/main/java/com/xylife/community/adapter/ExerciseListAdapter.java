@@ -13,6 +13,9 @@ import com.xylife.community.adapter.viewholder.ExerciseViewHolder;
 import com.xylife.community.bean.Exercise;
 import com.xylife.community.ui.PartyDetailActivity;
 
+/**
+ * 详情界面
+ */
 public class ExerciseListAdapter extends ListBaseAdapter<Exercise> {
 
     private Context mContext;
