@@ -1,4 +1,5 @@
 package com.android.framewok;
+
 import android.app.Activity;
 import android.content.Context;
 
@@ -9,14 +10,14 @@ import java.util.Stack;
  *
  * @author FireAnt（http://my.oschina.net/LittleDY）
  * @created 2014年10月30日 下午6:22:05
- *
  */
 public class AppManager {
 
     private static Stack<Activity> activityStack;
     private static AppManager instance;
 
-    private AppManager() {}
+    private AppManager() {
+    }
 
     /**
      * 单一实例
@@ -121,6 +122,13 @@ public class AppManager {
             android.os.Process.killProcess(android.os.Process.myPid());
             System.exit(0);
         } catch (Exception e) {
+        }
+    }
+
+
+    public void removeActivity(Activity activity) {
+        if (activity != null) {
+            activityStack.remove(activity);
         }
     }
 }

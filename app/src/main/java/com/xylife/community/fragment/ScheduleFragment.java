@@ -17,7 +17,6 @@ import rx.Observable;
 
 /**
  * Created by SK on 2016-05-30.
- *
  */
 public class ScheduleFragment extends BaseListFragment<Exercise, List<Exercise>> {
 
@@ -45,8 +44,8 @@ public class ScheduleFragment extends BaseListFragment<Exercise, List<Exercise>>
 
     @Override
     protected Observable<Response<List<Exercise>>> sendRequestData() {
-        TLog.log("sendRequestData mCurrentPage = " +  mCurrentPage);
-        return APIWrapper.getInstance().queryLookUp("人才",mCurrentPage);
+        TLog.log("sendRequestData mCurrentPage = " + mCurrentPage);
+        return APIWrapper.getInstance().queryLookUp("人才", mCurrentPage);
     }
 
 }

@@ -1,7 +1,6 @@
 package com.xylife.community.fragment;
 
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.View;
 
 import com.android.framewok.base.ListBaseAdapter;
@@ -20,9 +19,10 @@ import java.util.List;
 import rx.Observable;
 
 
-public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
+public class HomeFragment extends BaseListFragment<Exercise, List<Exercise>> {
 
     private HomeSlideShowView slideShowView;
+
     @Override
     public void initView(View view) {
         super.initView(view);
@@ -30,7 +30,7 @@ public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
         headerView = new CommonHeader(getActivity(), R.layout.layout_home_header);
         RecyclerViewUtils.setHeaderView(mRecyclerView, headerView);
 
-        Log.d("HomeFragment","HomeFragment");
+
         slideShowView = (HomeSlideShowView) headerView.findViewById(R.id.banner_view);
     }
 
@@ -42,7 +42,7 @@ public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
 
     @Override
     protected void onRefresh() {
-        if (null != slideShowView){
+        if (null != slideShowView) {
             slideShowView.refreshView();
         }
 
@@ -56,7 +56,7 @@ public class HomeFragment extends BaseListFragment<Exercise,List<Exercise>> {
 
     @Override
     protected Observable<Response<List<Exercise>>> sendRequestData() {
-        return APIWrapper.getInstance().queryLookUp("人才",mCurrentPage);
+        return APIWrapper.getInstance().queryLookUp("人才", mCurrentPage);
     }
 
     @Override
