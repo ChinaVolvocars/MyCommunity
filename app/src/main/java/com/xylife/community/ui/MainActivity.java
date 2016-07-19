@@ -30,7 +30,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.OnClick;
 
-public class MainActivity extends BaseActivity implements ViewPager.OnPageChangeListener{
+public class MainActivity extends BaseActivity implements ViewPager.OnPageChangeListener {
     public static ViewPager mViewPager;
     @BindViews({R.id.menu_home_icon, R.id.menu_date_icon, R.id.menu_me_icon})
     List<GradientIconView> mTabIconViews;
@@ -48,6 +48,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     @BindArray(R.array.title_bar_labels)
     CharSequence[] mLabels;
     static ArrayList<Fragment> mFragments = new ArrayList<>();
+
     static {
         mFragments.add(new HomeFragment());
         //mFragments.add(new PartyFragment());
@@ -178,7 +179,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     }
 
     @Override
-    @OnClick({R.id.tab_home_layout,R.id.tab_schedule_layout,R.id.tab_me_layout})
+    @OnClick({R.id.tab_home_layout, R.id.tab_schedule_layout, R.id.tab_me_layout})
     public void onClick(View v) {
         resetOtherTabs();
 

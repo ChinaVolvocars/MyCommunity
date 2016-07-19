@@ -29,6 +29,7 @@ public class HomeFragment extends BaseListFragment<Exercise, List<Exercise>> {
 
         headerView = new CommonHeader(getActivity(), R.layout.layout_home_header);
         RecyclerViewUtils.setHeaderView(mRecyclerView, headerView);
+        View viewById = headerView.findViewById(R.id.account_editor);
 
 
         slideShowView = (HomeSlideShowView) headerView.findViewById(R.id.banner_view);
